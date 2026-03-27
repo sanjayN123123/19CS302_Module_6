@@ -1,33 +1,31 @@
 
-# EX 28 C program that demonstrates the use of enum (enumeration) type to define and use named integer constants.
-## DATE:
+# EX 27 C program that demonstrates the use of typedef to create a new alias name for a data type.
 ## AIM:
-To write a C program that demonstrates the use of enum (enumeration) type to define and use named integer constants.
+To write a C program that demonstrates the use of typedef to create a new alias name for a data type.
 
 ## Algorithm
 1. Start.
-2. Declare enum type
-3. Declare all days in a week
-4. Print result
-5. End
-6. 
+2. Declare a variable value of type char.
+3. Prompt the user to enter a value.
+4. Read the value using scanf.
+5. Check eligible for marriage.
+6. If age >= 21, print "Eligible".
+7. If false, print " Not Eligible".
+8. End.   
+
 ## Program:
 ```
 #include <stdio.h>
-enum weekdays {
- Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-};
+typedef int MyInt;
 int main() {
- enum weekdays today = Wednesday;
- if (today == Wednesday) {
- printf("Today is Wednesday.\n");
- }
+ MyInt num = 10;
+ printf("The value of num is: %d\n", num);
+ return 0;
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/f09ed715-ebca-4b0c-8f83-f9f67245b32e)
-
+![image](https://github.com/user-attachments/assets/5abbbaaa-f0f4-4acc-8322-b2af1739d68e)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
